@@ -1,9 +1,9 @@
-FRITEX = FRactional ITeration of EXponentials
+FRITEXP = FRactional ITeration of EX{onentials
 Software for computing fractionally iterated exponentials and generalized
 arithmetic operations, and making nice plots
 
 See my paper "Generalized Arithmetic Operator Parametrized by a Real Number" 
-available as a PDF on the FRITEX github repo, or my personal site www.darenscotwilson.com
+available as a PDF on the FRITEXP github repo, or my personal site www.darenscotwilson.com
 
 
 Source Code 

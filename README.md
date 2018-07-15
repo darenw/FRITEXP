@@ -1,7 +1,7 @@
-# FRITEX
+# FRITEXP
 Code for computing fractionally iterated exponentials, and making plots for a paper.
 
-FRITEX = FRactionally ITerated EXponentials
+FRITEXP = FRactionally ITerated EXPonentials
 
 
 
@@ -67,7 +67,7 @@ Best of all, there are no known practical applications. Perfectly pure math!
 
 ## Source Code
 
-Source code defining functions to calculate fritex functions is available in Python, Go, D and Javascript. Maybe more later.  The directories are named in obvious ways.  In each case, there is a source file for the Szekeres-defined functions, and one for the symmetry-based functions. Unit tests, examples, may be included.  Plotting routines are kept separate, in plots/.
+Source code defining functions to calculate fritexp functions is available in Python, Go, D and Javascript. Maybe more later.  The directories are named in obvious ways.  In each case, there is a source file for the Szekeres-defined functions, and one for the symmetry-based functions. Unit tests, examples, may be included.  Plotting routines are kept separate, in plots/.
 
    py/  Python: plain real numbers and numpy arrays
    js/  Javascript includes HTML for interactive calculator and plotting
