@@ -1,0 +1,79 @@
+FRITEX = FRactional ITeration of EXponentials
+Software for computing fractionally iterated exponentials and generalized
+arithmetic operations, and making nice plots
+
+See my paper "Generalized Arithmetic Operator Parametrized by a Real Number" 
+available as a PDF on the FRITEX github repo, or my personal site www.darenscotwilson.com
+
+
+Source Code 
+----------------
+
+Source code for computing these functions, and making data plots and other
+handy actions, is organized by language.  For each, there is one file for the
+Szekeres-defined functions, one for the Symmetry-based functions, and
+other files for 
+
+
+py   Python
+go   Go language  (www.golang.org)
+D    D language  (www.dlang.org)
+js   Javascript, with html demo
+
+
+
+Brief ascii-math re-organized overview of main ideas from the paper
+-------------------------------------------------------------------
+We define exp_u(x) according to:
+   exp_0(x) = x
+   exp_1(x) = exp(x)
+   exp_a(exp_b(x)) = exp_c(x) where c=a+b
+This is "solved" by use of either Abel's equation
+   A(f (x)) = A(x) + 1  with f = exp
+or the logically equivalent Shroeder's equation 
+   L(f (x)) = cL(x)  
+with f=exp and c= 1/2
+These equations are "loose" in that only values of A at integer
+spacings are related. Random functions of period 1 may be used to 
+define alternative solutions. 
+
+One solution, by Szekeres, fixes A by demanding non-changing signs of all
+orders of derivatives for B, the Abel function for exp(x)-1, which has a
+fixpoint at zero.  Power series are developed, approximations made, and
+an algorithm found to calculate exp_u(x) for arbitrary real u and x.
+
+Another solution is determined by a simple symmetry, 1 = L(x) + L(-x), 
+This leads to an algorithm involving generalized integer-order inverses and
+integer-iterated exp and log functions.  One starts with x, computes a 
+sequence of iteration counts, then converts that to the value of L. Likewise
+for the inverse of L.
+
+L has unbounded derivates, a strangely fractal-like appearance, except 
+using exp along one dimension instead of scaling.  I believe the function L
+and its inverse to be smooth, that is continuous to all orders of derivatives, 
+but have no proof.  Maybe I'll work on that someday.
+
+
+Exp_u(x) is used to define a generalized "arithmetic" operator. 
+In the way the logarithms are used to convert multiplication to addition,
+we have for any real u:
+    x op_u y  = exp_u( exp_{-u}(x) + exp_{-u}(y) )
+As * and + form a field, so do the "next" operator after * and *.
+
+Several suggestions for further research are given, including new orders
+of asymptotic growth greater than polynomial but less than exponential,
+but not like existing forms such as exp(sqrt(x)).
+
+Best of all, there are no known practical applications. Perfectly pure math!
+
+
+CONTACT
+-------
+Daren Scot Wilson
+darenw@darenscotwilson.com 
+https://github.com/darenw
+http://www.darenscotwilson.com/
+
+
+
+
