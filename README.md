@@ -19,13 +19,17 @@ I invented a new operation,  op_u(A,B), or better:  A op_u B, defined as
 
 with special cases 
 > A op_0 B = A+B
+
 > A op_1 B = A*B
 
 and where exp_u is the fractionally iterated exponential obeying
 > exp_0(x) = x
+
 > exp_1(x) = exp(x)
+
 > exp_a(exp_b(x)) = exp_{a+b}(x)  for any real a,b
 and for convenience its inverse
+
 > log_u(x) = exp_{-u}(x)
 
 Well that's great but how the heck do we define exp_u in a practical way? How do we calculate it with arbitrary real numbers u?  Turns out the problem is ambiguous. 
