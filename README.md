@@ -36,8 +36,10 @@ Well that's great but how the heck do we define exp_u in a practical way? How do
 
 
 This is "solved" by use of either Abel's equation
+
 >  A(f (x)) = A(x) + 1  with f = exp
 or the logically equivalent Shroeder's equation 
+
 >  L(f (x)) = cL(x)  
 with f=exp and we choose c= 1/2 for reasons explained in the paper.
 
