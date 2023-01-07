@@ -72,6 +72,10 @@ but not like existing forms such as exp(sqrt(x)).
 
 Best of all, there are no known practical applications. Perfectly pure math!
 
+## Slideshare
+
+Shorter than the paper, with almost enough info: my Slideshare slides
+https://www.slideshare.net/DarenWilson1/generalizing-addition-and-multiplication-to-an-operator-parametrized-by-a-real-number
 
 ## Source Code
 
